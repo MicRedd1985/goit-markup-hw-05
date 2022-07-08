@@ -60,7 +60,19 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button class="hero-button" type="button">Заказать услугу</button>
+          <button class="hero-button" type="button" data-modal-open>Заказать услугу</button>
+        </div>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <button class="modal-button" type="button" data-modal-close>
+              <svg width="11" height="11" class="icon-close">
+                <use href="./images/close-icon.svg"></use>
+              </svg>
+            </button>
+            <p class="modal-text">
+              hello world
+            </p>
+          </div>
         </div>
       </section>
 
@@ -111,12 +123,15 @@
           <ul class="work-list list">
             <li class="work-image">
               <img src="./images/img1.jpg" alt="project" width="370" height="294" />
+              <p class="work-text">Десктопные приложения</p>
             </li>
             <li class="work-image">
               <img src="./images/img2.jpg" alt="project" width="370" height="294" />
+              <p class="work-text">Мобильные приложения</p>
             </li>
             <li class="work-image">
               <img src="./images/img3.jpg" alt="project" width="370" height="294" />
+              <p class="work-text">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
@@ -334,26 +349,26 @@
     <!--Footer-->
     <footer class="footer-content">
       <div class="footer-container">
-      <div class="footer-adress">
-        <a lang="en" class="logo" href="./index.html"><span class="logo-web">Web</span>Studio</a>
-        <address class="address">
-          <ul class="footer-link list">
-            <li class="item">
-              <a
-                class="map-link"
-                href="https://goo.gl/maps/piqngm7oDQpEDh6u6"
-                target="_blank"
-                rel="noopener nofollow noreferrer"
-                >г. Киев, пр-т Леси Украинки, 26
-              </a>
-            </li>
-            <li class="item">
-              <a class="link" href="mailto:info@example.com">info@example.com</a>
-            </li>
-            <li class="item"><a class="link" href="tel:+380991111111">+38 099 111 11 11</a></li>
-          </ul>
-        </address>
-      </div>
+        <div class="footer-adress">
+          <a lang="en" class="logo" href="./index.html"><span class="logo-web">Web</span>Studio</a>
+          <address class="address">
+            <ul class="footer-link list">
+              <li class="item">
+                <a
+                  class="map-link"
+                  href="https://goo.gl/maps/piqngm7oDQpEDh6u6"
+                  target="_blank"
+                  rel="noopener nofollow noreferrer"
+                  >г. Киев, пр-т Леси Украинки, 26
+                </a>
+              </li>
+              <li class="item">
+                <a class="link" href="mailto:info@example.com">info@example.com</a>
+              </li>
+              <li class="item"><a class="link" href="tel:+380991111111">+38 099 111 11 11</a></li>
+            </ul>
+          </address>
+        </div>
 
         <div class="footer-social-thumb">
           <h3 class="footer-social-title">присоединяйтесь</h3>
@@ -390,6 +405,8 @@
         </div>
 
       </div>
+
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
